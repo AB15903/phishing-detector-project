@@ -1,0 +1,53 @@
+2025-06-28 18:13:40.821571 - http://secure-login.example.com --> phishing (by rule-based)
+2025-06-28 18:17:00.284296 - http://secure-login.example.com --> phishing (by rule-based)
+2025-06-28 18:17:22.388764 - https://www.google.com --> legitimate
+2025-06-28 18:18:09.884495 - http://statebankofindia-secure-login.com --> phishing (by rule-based)
+2025-07-02 16:54:44.767607 - http://www.google.com --> legitimate
+2025-07-02 17:23:13.021311 - http://secure-login.example.com --> phishing (by rule-based)
+2025-07-02 17:35:47.492338 - http://secure-login.example.com --> phishing (by rule-based)
+2025-07-02 18:23:38.531539 - https://www.youptube.com --> legitimate
+2025-07-02 18:24:12.996536 - https://www.face-book.com --> legitimate
+2025-07-03 18:58:26.538213 - https school in slash slash www --> phishing (by ML)
+2025-07-03 18:58:54.183388 - https colon slash slash www.google.com --> phishing (by ML)
+2025-07-03 18:59:27.696356 - ttps Poland slash slash www google.com --> phishing (by ML)
+2025-07-03 18:59:52.288199 - https colon double slash google.com --> phishing (by ML)
+2025-07-03 19:19:00.570277 - https://google.com --> legitimate
+2025-07-03 22:10:45.114245 - https://www_google.com --> legitimate
+2025-07-03 22:19:15.688773 - http://secure-login.example.com --> phishing (by rule-based)
+2025-07-03 22:36:23 - http://google_com --> legitimate
+2025-07-03 22:39:33 - http://google_com --> legitimate
+2025-07-03 22:43:14 - http://googl --> legitimate
+2025-07-03 22:43:27 - http://google_com --> legitimate
+2025-07-03 23:04:27 - http://google_com --> legitimate
+2025-07-03 23:28:21 - http://google_com --> phishing (by rule-based: contains underscore)
+2025-07-03 23:29:54 - https://youtube_com --> phishing (by rule-based: contains underscore)
+2025-07-03 23:35:53 - https://facebook_login.com --> phishing (by rule-based: contains suspicious keyword)
+2025-07-06 22:21:35 - http://www_google_com --> phishing (by rule-based: contains underscore)
+2025-07-06 22:21:57 - https://google_com --> phishing (by rule-based: contains underscore)
+2025-07-06 22:22:45 - https://www youtube.com --> phishing (by rule-based: )
+2025-07-06 22:23:17 - https://www.youtube.com --> phishing (by rule-based: )
+2025-07-06 22:23:36 - http://google.com --> phishing (by rule-based: )
+2025-07-06 22:30:01 - http://www.google.com --> phishing (by rule-based: )
+2025-07-06 22:30:44 - http://secure-login.com --> phishing (by rule-based: contains suspicious keyword)
+2025-07-06 22:31:13 - https://www.google.com --> phishing (by rule-based: )
+2025-07-06 22:43:33 - https://google.com --> legitimate
+2025-07-06 22:43:40 - https://www_google.com --> phishing (by rule-based: contains underscore)
+2025-07-06 22:44:01 - http://www youtube.com --> legitimate
+2025-07-06 22:44:32 - http://secure-login.com --> phishing (by rule-based: contains suspicious keyword)
+2025-07-06 22:55:15 - https://google.com --> legitimate
+2025-07-06 22:55:22 - http://secure-login.com --> phishing (by rule-based: contains suspicious keyword)
+2025-07-06 22:55:27 - http://secure-login.com --> phishing (by rule-based: contains suspicious keyword)
+2025-07-06 22:55:33 - https://www_google.com --> phishing (by rule-based: contains underscore)
+2025-07-06 23:04:12 - https://google.com --> legitimate
+2025-07-07 16:33:14 - http://secure-login.examle.com --> phishing (by rule-based: contains suspicious keyword)
+2025-07-07 16:33:39 - https://www.google.com --> legitimate
+2025-07-07 16:34:04 - http://secure-login.example.com --> phishing (by rule-based: contains suspicious keyword)
+2025-07-07 16:34:51 - https://www.google.com --> legitimate
+2025-07-07 23:36:32 - https://www.google.com --> legitimate
+2025-07-07 23:37:31 - http://paypal.login.verify-now.com --> phishing (by rule-based: contains suspicious keyword)
+2025-07-07 23:38:09 - http://sbi-login-security-alert.com --> phishing (by rule-based: contains suspicious keyword)
+2025-08-02 23:53:37 - http://secure-login.com --> phishing (by rule-based: contains suspicious keyword)
+2025-08-02 23:53:53 - https://www.google.com --> legitimate
+2025-08-23 14:49:14 - https://www.google.com --> legitimate
+2025-08-26 23:46:21 - https://youtube_com --> phishing (by rule-based: contains underscore)
+2025-08-26 23:46:32 - http://www.google.com --> legitimate

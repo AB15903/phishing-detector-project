@@ -1,0 +1,40 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# --- Virtual Environments ---
+venv/
+.env/
+ENV/
+env/
+*.env
+
+# --- Package / Dependency stuff ---
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+*.whl
+
+# --- IDE & Editor Files ---
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- Logs & Databases ---
+*.log
+*.sqlite3
+*.db
+
+# --- OS generated files ---
+.DS_Store
+Thumbs.db
+
+# --- Jupyter / Notebooks ---
+.ipynb_checkpoints/

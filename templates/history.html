@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Scan History{% endblock %}
+
+{% block content %}
+<h2>Scan History</h2>
+{% if entries %}
+<table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+    <thead>
+        <try>
+            <th>Time</th>
+            <th>URL</th>
+            <th>Result</th>
+        </try>
+    </thead>
+    <tbody>
+        {% for entry in entries %}
+        <tr>
+            <td>{{ entry.timestamp }}</td>
+            <td>{{ entry.url }}</td>
+            <td class="{{ 'phishing' if 'phishing' in entry.result else 'legitimate'}}">{{ entry.result }}</td>
+
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No scan history found.</p>
+{% endif %}
+
+<a href="/">Back to Home</a>
+{% endblock %}

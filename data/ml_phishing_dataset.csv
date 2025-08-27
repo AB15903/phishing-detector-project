@@ -1,0 +1,11 @@
+url,label
+http://secure-login.example.com,phishing
+https://www.google.com,legitimate
+http://paypal.login.verify-now.com,phishing
+https://amazon.com,legitimate
+http://bankofamerica-login-security-alert.com,phishing
+https://microsoft.com,legitimate
+http://update-facebook-info-alert.com,phishing
+https://apple.com,legitimate
+http://login-verification-paypal.com,phishing
+https://github.com,legitimate

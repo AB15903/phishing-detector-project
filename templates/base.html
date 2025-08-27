@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% block title %}Phishing Detector{% endblock %}
+        </title>
+        <script>
+            document.addEventListener("DOMContentLoaded", () =>{
+                const theme = localStorage.getItem("theme");
+                if (theme === "dark") document.body.classList.add("dark");
+            });
+        </script>
+        <style>
+            body{
+                transition: background 0.3s, color 0.3s;
+                font-family: 'Segoe UI', sans-serif;
+                padding: 40px;
+                margin: 0;
+                background-color: linear-gradient(to right, #f2f2f2, #e0f7fa);
+                color:#333;
+            }
+            .dark{
+                background: #121212;
+                color: #eee;
+            }
+             .dark.container{
+                background: #fff;
+                max-width: 600px;
+                padding: 30px;
+                border-radius: 16px;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+                animation: fadeIn 0.6s ease-in-out;
+            }
+            h1, h2, h3 {
+                color: #2c3e50;
+            }
+            .dark input[type="text"]{
+                width: 100px;
+                padding: 12px;
+                margin: 15px 0;
+                border: 1px solid #ccc;
+                border-radius: 8px;    
+            }
+            button{
+                background-color: #00796b;
+                color: white;
+                padding: 10px 24px;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            button:hover{
+                background-color: #004d40;
+            }
+            .phishing{
+                color: red;
+                font-weight: bold;
+            }
+            .legitimate{
+                color: green;
+                font-weight: bold ;
+            }
+            a{
+                display: inline-block;
+                margin-top: 20px;
+                color: #00796b;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            @keyframes fadeIn{
+                from {opacity: 0;}
+                to {opacity: 1;}
+            }
+            /* form, .result-box {
+                background: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px #ccc;
+            }
+            input[type="text"] {
+                width: 100%;
+                /* padding: 10px; */
+                /* margin-top: 10px; */
+                /* margin-bottom: 20px; */
+                /* padding: 10px; */
+                /* margin: 15px; */
+                /* border: 1px solid #ccc; */
+                /* border-radius: 8px; */
+            /* } */
+            /* button{ */
+                /* padding: 10px 20px; */
+            /* } */
+            /* .phishing { */
+                /* color: red; */
+                /* font-weight: bold; */
+            /* } */
+            /* .legitimate { */
+                /* color: green; */
+                /* font-weight: bold; */
+            /* }  */
+        </style>
+    </head>
+    <body>
+        <!-- ✅ HEADER (TOP OF BODY) -->
+        <button onclick="toggleTheme()" style="float:right; margin-bottom: 20px;">Toggle Theme</button>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/history">View History</a>
+        </nav>
+        <script>
+            function toggleTheme(){
+                document.body.classList.toggle("dark")
+                const isDark = document.body.classList.contains("dark");
+                localStorage.setItem("theme", isDark ? "dark" : "light");
+            }
+        </script>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>   
+    </body>
+</html>

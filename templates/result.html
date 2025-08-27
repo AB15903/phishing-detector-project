@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Detection Result{% endblock %}
+
+{% block content %}
+<div class="result_box">
+    <h2>URL:</h2>
+    <P>{{ url }}</P>
+    <h3> Result:</h3>
+    <p class="{{ 'phishing' if 'phishing' in result else 'legitimate'}}">
+    <strong>{{ result }}</strong>
+    </p>
+</div>
+
+<a href="/">Check another URL</a>
+{% endblock %}
